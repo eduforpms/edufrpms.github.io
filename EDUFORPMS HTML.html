@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pencegahan Penyakit Menular Seksual</title>
+    <link rel="stylesheet" href="EDUFORPMS CSS.css">
+</head>
+<body>
+    <header>
+        <a href="ABOUT US HTML.html" class="logo">EDUFORPMS</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="GAMES HTML.html">Games</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" alt="" id="stars">
+        <img src="moon.png" alt="" id="moon">
+        <h2 id="text"></h2>
+        <img src="background.png" id="background">
+        <a href="EXPLORE HTML.html" id="btn">Explore</a>
+    </section>
+    <div class="sec">
+        <h2>Pencegahan Penyakit Menular seksual</h2>
+        <p>Penyakit menular seksual (PMS) adalah penyakit infeksi yang menular melalui kontak seksual, baik seks vaginal, oral maupun anal.
+            Penularan penyakit ini bisa melalui darah, sperma, atau cairan tubuh lainnya.<br>
+            Terkadang, penyakit ini bisa menular melalui kontak fisik intim lainnya. Beberapa PMS, seperti herpes dan HPV, bisa menyebar melalui kontak kulit ke kulit.
+            Selain itu, pemakaian jarum suntik secara berulang atau bergantian di antara beberapa orang juga bisa menularkan penyakit. <br><br>
+            Pencegahan adalah upaya atau tindakan yang dilakukan untuk menghindari atau mengurangi kemungkinan terjadinya suatu masalah, risiko, atau kejadian yang tidak diinginkan. <br><br> 
+            Pencegahan penyakit menular seksual (PMS) adalah langkah-langkah yang diambil untuk mengurangi risiko penularan atau infeksi penyakit yang ditularkan melalui hubungan seksual <br><br>Tujuan kami membuat situs web ini adalah untuk mengedukasi khalayak khusus nya remaja tentang Penyakit Menular Seksual. Kami akan membahas tentang Sistem Reproduksi, Penyakit Menular Seksual, serta Pencegahannya. </p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let text = document.getElementById('text');
+        let background = document.getElementById('background');
+        let btn = document.getElementById('btn');
+
+        window.addEventListener('scroll',() => {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            text.style.marginBottom = value * 1.05 + 'px';
+        });
+    </script>
+</body>
+</html>

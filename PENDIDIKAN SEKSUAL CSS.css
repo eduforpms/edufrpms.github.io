@@ -1,0 +1,134 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body 
+{
+    min-height: 100vh;
+    background-color: #221545;
+    background: linear-gradient(#110515#221545);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo
+{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 12px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    transition: all .3s ease;
+}
+header ul li a:hover,
+header ul li a.active 
+{
+    box-shadow: 0 0 1rem #fff;
+    background: #fff;
+    color: #221545
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #221545;
+}
+.wave
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+    animation: animate 4% ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.25s);
+}
+.wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+.wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+.wave#wave3
+{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+.wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    background-position-x: 100px;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translateY(10px);
+    }
+}
+.sec
+{
+    padding: 100px;
+    color: #221545;
+    background-color: #fff;
+}
+.sec h2
+{
+    font-size: 3em;
+    color: #221545;
+}
+.sec p
+{
+    font-size: 1.2e;
+}
